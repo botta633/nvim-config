@@ -1,0 +1,17 @@
+     {
+    "languageserver": {
+      "ccls": {
+        "command": ["~/scripts/cclscript"],
+        "filetypes": ["go","c", "cc", "cpp", "c++", "objc", "objcpp"],
+	"trace.server": "verbose",
+        "rootPatterns": [".ccls", "compile_commands.json", ".git/", ".hg/"],
+	"clangd.fallbackFlags": [ "-std=c++20" ],
+        "initializationOptions": {
+            "cache": {
+              "directory": "/tmp/ccls"
+            }
+          }
+      }
+    }
+  }
+
